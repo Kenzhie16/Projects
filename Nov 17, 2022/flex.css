@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+.container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-start;
+    width: auto;
+    height: auto;
+}
+
+p {
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.box {
+    width: auto;
+    font-size: 32px;
+    padding: 20px;
+}
+
+.box1 {
+    
+}
+
+.box2 {
+    
+}
+
+.box3 {
+ 
+}
+
+.box4 {
+
+}
+
+.box5 {
+   
+}
+
+.box6 {
+
+}
+
+.box7 {
