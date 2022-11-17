@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        .box1 {
+            background: red;
+            display: inline-block;
+        }
+        .box2 {
+            background: green;
+            display: inline-block;
+        }
+        .box3 {
+            background: blue;
+        }
+        .box4 {
+            background-color: orange;
+            display: none;
+        }
+        .box5 {
+            background-color: yellow;
+            display: inline;
+        }
+        .box6 {
+            background-color: aliceblue;
+            /*  padding shorthand property */
+            /*
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            */
+            
+            padding: 10px 5px 15px 20px;
+
+            /* border shorthand property */
+            border: 1px solid black;
+            border-width: 1px 2px 3px 4px;
+            border-style: solid dashed double groove;
+            border-top: 1px solid red;
+            border-right: 2px dashed green;
+            border-bottom: 3px double yellow;
+            border-left: 4px groove blue;
+        
+        
+            /* margin shorthand property */
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            */
+            margin: 20px 15px 10px 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            padding-top: 0px;
+            list-style-type: none;
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .navigation li a {
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* pseudo-class */
+        .navigation li a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        .navigation li a:visited {
+            color: green;
+        }
+        .box7 {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .box7 p {
+            color: red;
+            padding: 20px;
+        }
+        .box7:hover p {
+            color: blue;
+        }
+
+        /* button */
+        .btn {
+            display: inline-block;
+            background: red;
+            color: white;
+            padding: 10px 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+            transition: background 0.5s;
+        }
+        .btn:hover {
+            background-color:powderblue;
+        }
+        .parent li:first-child {
+            color: fuchsia;
+            font-size: 24px;
+        }
+        .parent li:nth-child(even) {
+            color: royalblue;
+            font-size: 30px;
+        }
+        .parent li:last-child {
+            color: darkolivegreen;
+            font-size: 35px;
+        }
+        .parent li:nth-child(odd) {
+            color: black;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Display Properties</h1>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corrupti?</div>
+    <div class="box6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perferendis?
+    </div>
+    <div class="box7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsam!</p>
+    </div>
+
+    <ul class="navigation">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+
+    <ul class="parent">
+        
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+        <li>1st child</li>
+    </ul>
+
+    </div>
+</body>
+</html>

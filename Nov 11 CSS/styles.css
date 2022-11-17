@@ -1,0 +1,29 @@
+/* Background Example */
+#div1 {
+    width: 200px;    
+    height: 200px;
+    background-image: url(https://placeimg.com/640/480/tech);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top center;
+}
+
+.div2 {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed cornflowerblue;
+}
+
+.div3 {
+    background-color: lightgray;
+}
+
+.div2.div3 {
+    color: maroon;
+}
+
+.div4 {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,99 @@
+body{
+    background-color:bisque;
+    font-style: italic;
+
+}
+.magic{
+    box-shadow: 0 5px 5px;
+    max-width: 700px;
+    margin:auto;
+    background: white;
+    height: 830px;
+}
+.personal{
+    margin: 20px; 
+    width: auto;
+    margin-left: -8px;
+
+}
+.personal h1{
+    display: inline;
+    margin-left: 4px;  
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+
+}
+.personal img{
+    display: inline;
+    width: 165px;
+    height: 145px;
+    margin-bottom: -120px;
+    margin-left: 260px;
+    border-radius: 50%;
+}
+.content1{
+    margin-left: 15px;
+}
+.content2{
+    display: inline;
+    background: red;
+}
+hr{
+    border-bottom: 2px solid red
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 15px;
+    margin-left: -8px;
+}
+.objective{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.education{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+hr{
+    border-bottom: 2px solid red 
+}
+.tech{
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    margin-right: 0px;
+}
+.tech1 {
+    margin-left: -20px;
+    font-weight: bold;
+
+}
+hr{
+    border-bottom: 2px solid red 
+}
+.work{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+.xp1 li{
+    font-weight: bold;
+    margin-left: -40px;
+    margin-right: 80px;
+    
+}
+.xp2 li{
+    font-weight: bold;
+    margin-left: -40px;
+    margin-right: 80px;
+}
+.xp3 li{
+    font-weight: bold;
+    margin-left: -40px;
+    margin-right: 100px;
+}
+
+
+
+

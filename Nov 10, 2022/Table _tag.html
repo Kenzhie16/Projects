@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout Example</title>
+</head>
+<body>
+
+    <div
+        id="container" 
+        style="width: 500px; 
+        height: 20px; 
+        border: 1px solid black; 
+        text-align:center;
+        border-spacing: 0;
+        border-collapse: collapse;"
+    >
+    
+        <div style="background-color:red; width: 100%; height: 300%">
+            Head Section
+        </div>
+
+        <div style="background-color:aqua; width: 100%; height: 300%;">
+            Navigation Bar
+        </div>
+
+        <div style="background-color:lightpink; float:left; width: 30%; height: 500%">
+            Index
+        </div>
+
+        <div style="background-color:yellow; float:right; width: 70%; height:500%">
+            Content Section
+        </div>
+
+        <div style="background-color:crimson; width:100%; height: 300%; clear:both">
+            Footer
+    </div>
+    <br>
+
+
+    <table
+        id="container"
+        style="width: 500px; 
+        border: 1px solid black; 
+        text-align: center; 
+        border-spacing: 0;
+        border-collapse:collapse;"
+    >
+        <tr>
+            <td
+            style="background-color:red; height: 70px;"
+            colspan="2">
+                Head Section
+        </tr>
+        <tr>
+            <td style="background-color: lightblue; height:70px"
+            colspan="2">
+                Navigation Bar
+            
+        </tr>
+        <tr style="height: 250px;">
+            <td style="width: 25%; background-color: lightgreen;">
+                Index
+            </td>
+            <td style="width: 75%; background-color:pink;">
+                Content Section
+        </tr>
+
+        <tr style="border: 1px solid black;">
+            <td style="background-color: yellow; height: 75px;"
+            colspan="2">
+            Footer
+        </tr>
+        
+    </table>
+
+</body>
+</html>    

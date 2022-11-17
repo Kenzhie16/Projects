@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            color: red;
+            height: 70px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+        }
+        nav {
+            background-color: lightgray;
+            height: 50px;
+            border: 1px solid black;
+        }
+        article {
+            background-color: powderblue;
+            width: 70%;
+            float: left;
+            height: 750px;
+            border: 1px solid black
+        }
+        aside {
+            background-color: lightcoral;
+            width: 30%;
+            float: left;
+            height: 750px;
+            border: 1px solid black
+        }
+        footer {
+            background-color: lightgreen;
+            height: 60px;
+            clear: both;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Semantic HTML</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>My Blog</h2>
+            <section>
+                <p>Baryon mode in Naruto is when Naruto and Kurama combine their chakra together to increase their power. It is likely the strongest power-up of any character in the entire franchise. Baryon mode combines Naruto and Kurama's power in a new way that manifests as a chakra cape with nine tails</p>
+            </section>
+            <section>
+                <figure>
+                    <img src="https://i1.sndcdn.com/artworks-gWU1owh3XMJDRosd-7hSzLw-t500x500.jpg" alt="Random Photo">
+                    <figcaption><b>Uzumaki Naruto: Baryon Mode</b><figcaption>
+                </figure>
+            </section>
+            <section>
+                <!-- <video src="./planetearth.mp4"></video> -->
+                <video 
+                    width="480" 
+                    height="270"
+                    controls
+                    autoplay
+                    muted
+                    loop>
+                    <source src="./baryonmode.mp4" type=""/>
+                </video>
+            </section>
+
+            <section>
+                <audio controls>
+                    <source src="./audio.mp3">
+                </audio>
+            </section>
+
+        </article>
+        <aside>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nihil natus distinctio aliquam accusamus dicta ex. Molestias ipsa pariatur nisi debitis asperiores repellendus eligendi, illum quis ab, obcaecati facilis accusantium.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Email me at kelaco@kodego.ph</p>
+        <p>Copright 2022</p>
+    </footer>
+    
+</body>
+</html>
