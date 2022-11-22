@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    height: 15vh;
+    padding: 15px;
+    background-color: yellowgreen;
+}
+main {
+    display: flex;
+    height: 70vh;
+}
+
+aside {
+    width: 25%;
+    padding: 15px;
+    background-color: burlywood;
+}
+nav {
+    width: 25%;
+    padding: 15px;
+    background-color: coral;
+}
+article {
+    display: flex;
+    width: 50%;
+    margin-top: 40px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    background-color: powderblue;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 100px;
+    height: auto;
+
+}
+.article {
+    display: flex;
+    column-gap: 30px;
+    text-align: start;
+    text-indent: 5px;
+}
+.flex-item.left {
+    width: 45%;
+    align-items: center;
+    height: 25px;
+}
+
+.flex-item.left .field {
+    display: flex;
+    margin-bottom: 10px;
+}
+.flex-item.left .field label {
+    padding-inline-end: 20px;
+    flex: 1;
+}
+.flex-item.left .field input {
+    flex: 2;
+    height: 25px;
+}
+
+.flex-item.left .field select {
+    flex: 1.5;
+}
+.btn-container {
+    margin-top: 25%;
+    text-align: center;
+
+}
+
+input[type="submit"] {
+    border: 0;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    
+    <header>
+        HEADER
+    </header>
+
+    <main>
+
+        <article>
+            <form>
+                <div class="article">
+                    <div class="flex-item left">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="field">
+                            <label for="date/time">Pickup Date/Time</label>
+                            <input type="datetime-local" id="date/time">
+                        </div>
+                        <div class="field">
+                            <label for="dropdown">Pickup Place</label>
+                            <select name="dropdown" id="dropdown">
+                                <option
+                                    selected
+                                    disabled
+                                >
+                                    Please Select
+                                </option>
+                                <option value="ceb">Cebu</option>
+                                <option value="mnl">Manila</option>
+                                <option value="dav">Davao</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="text">Dropoff Place</label>
+                            <input type="text" name="text" id="text">
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex-item right">
+                        Which vehicle do you require?
+                        <br>
+                        <input type="radio" id="radio" value="Van">
+                        <label for="radio">Van</label>
+                        <br>
+                        <input type="radio" id="radio" value="Jeepney">
+                        <label for="radio">Jeepney</label>
+                        <br>
+                        <input type="radio" id="radio" value="Tricycle">
+                        <label for="radio">Tricycle</label>
+                        <br>
+                        <br>
+                        Extras
+                        <br>
+                        <input type="checkbox" id="babyseat" value="BabySeat">
+                        <label for="babyseat">Baby Seat</label>
+                        <br>
+                        <input type="checkbox" id="checkbox" value="WheelchairAccess">
+                        <label for="checkbox">Wheelchair Access</label>
+                        <br>
+                        <input type="checkbox" id="checbox" value="StockTip">
+                        <label for="checkbox">Stock Tip</label>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <input type="submit" value="Submit Booking">
+                </div>
+            </form>
+        </article>
+
+        <aside>ASIDE</aside>
+
+        <nav>
+            Nav
+        </nav>
+    </main>
+
+    <footer>FOOTER</footer>
+</body>
+</html>
