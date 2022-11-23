@@ -7,7 +7,6 @@
     border: 2px solid black;
     justify-content: center;
     font-style: italic;
-
 }
 
 .header {
@@ -43,28 +42,22 @@
     position: relative;
 }
 .main1 {
-    width: 750px;
+    width: 700px;
     padding: 10px;
     border: 1px solid black;
 }
 .main2 {
-    width: 750px;
+    width: 700px;
     padding: 10px;
     border: 1px solid black;
 }
 .main3 {
-    width: 750px;
+    width: 700px;
     padding: 10px;
     border: 1px solid black;
 }
 
-@media screen and (max-width: 700px) {
-    
-    body {
-        background-color: lightsalmon;
-    }
-}
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 601px) {
     
     body {
         background-color: white;
@@ -72,6 +65,9 @@
 }
 @media screen and (max-width: 600px)
 {
+    body {
+        background-color: lightsalmon;
+    }
     .container {
         flex-wrap: wrap;
     }
