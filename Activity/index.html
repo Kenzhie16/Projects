@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Calculator</title>
+</head>
+<body>
+    <script>
+        let answer;
+        const firstNum = prompt("Enter the first number.");
+        const secondNum = prompt("Enter the second number");
+        const operator = prompt('Enter operator for calculation');
+
+        if(operator === '+'){
+              add();
+         }else if(operator === '-'){
+              subtract();
+         }else if(operator === '*'){
+              multiply();
+        }else if(operator === '/'){
+              divide();
+        }else{
+                alert('Wrong calc operator! please try again.');
+        }
+
+        function add(){
+            answer = Number(firstNum) + Number(secondNum);
+            alert('The Result is: ' + answer);  
+        }
+
+        function subtract(){
+            answer = Number(firstNum) - Number(secondNum);
+            alert('The Result is: ' + answer);
+        }
+
+        function multiply(){
+            answer = Number(firstNum) * Number(secondNum);
+            alert('The Result is: ' + answer);
+            
+        }
+
+        function divide(){
+            answer = Number(firstNum) / Number(secondNum);
+            alert('The Result is: ' + answer);
+        }
+    </script>
+</body>
+</html>
