@@ -30,17 +30,17 @@
 // console.log(i);
 
 //  Answer #5
-// let num;
+let num;
 
-// while (true) {
-//     num = prompt('Please enter a number greater than 100:');
-//     if (num > 100) {
-//         break;
-//     } else if (num === "" || num === null) {
-//         break;
-//     }
-//     alert('The number must be greater than 100. Please try again.');
-// }
+while (true) {
+    num = prompt('Please enter a number greater than 100:');
+    if (num > 100) {
+        break;
+    } else if (num === "" || num === null) {
+        break;
+    }
+    alert('The number must be greater than 100. Please try again.');
+}
 
 // Answer 6
 
@@ -206,17 +206,17 @@
 // }
 // fizzBuzz(Number(num));
 
-const n = prompt("Enter a number: ");
-const Array = [];
-for(let i=1; i <=n; i++) {
-    if(i % 3 === 0 && i % 5 === 0) {
-        Array.splice(i, 1, "FizzBuzz");
-    }else if(i % 3 === 0) {
-        Array.splice(i, 1, "Fizz");
-    }else if( i % 5 === 0 ) {
-        Array.splice(i, 1, "Buzz");
-    }else {
-        Array.push(i);
-    }
-}
-console.log(Array);
+// const n = prompt("Enter a number: ");
+// const Array = [];
+// for(let i=1; i <=n; i++) {
+//     if(i % 3 === 0 && i % 5 === 0) {
+//         Array.splice(i, 1, "FizzBuzz");
+//     }else if(i % 3 === 0) {
+//         Array.splice(i, 1, "Fizz");
+//     }else if( i % 5 === 0 ) {
+//         Array.splice(i, 1, "Buzz");
+//     }else {
+//         Array.push(i);
+//     }
+// }
+// console.log(Array);
