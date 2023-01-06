@@ -15,7 +15,7 @@ loginForm.addEventListener(
 const fruitsForm = document.querySelector('#fruits');
 fruitsForm.addEventListener(
     "submit",
-    (f) => {
+    (e) => {
         /*
         1. Prevent default form submit
         2. Get the value of fruit and quantity
@@ -24,19 +24,15 @@ fruitsForm.addEventListener(
         5. Append the new li element to the ul id=list
         6. Reset inputs/set value to empty
         */
-        f.preventDefault();
+        e.preventDefault();
         const fruit = document.querySelector('#fruit');
         const quantity = document.querySelector('#quantity');
         const list = document.querySelector('#list');
         const item = document.createElement("li");
        
-        if(quantity.value >= 2) {
-            item.innerText = `${quantity.value} ${fruit.value}`;
-        }
-        else {
-            item.innerText = `${quantity.value} ${fruit.value}`;
-        } 
-        list.appendChild(item);
+        item.innerText = `${quantity.value} ${fruit.value}`;
+
+        list.append(item);
         fruitsForm.reset();
     }
 );
