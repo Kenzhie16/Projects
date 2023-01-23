@@ -1,6 +1,6 @@
 console.log("Sending a request to server");
 
-setTimeout( 
+setTimeout(
     () => {
         console.log("Received a response from the server");
     },
@@ -24,7 +24,7 @@ const isRightTriangle = (a, b, c) => {
     return square(a) + square(b) === square(c);
 }
 // 9 + 16 === square(c)
-console.log( isRightTriangle(3, 4, 5) ); // true
+console.log(isRightTriangle(3, 4, 5)); // true
 // Call Stack
 /*
     x * y
@@ -47,7 +47,7 @@ console.log( isRightTriangle(3, 4, 5) ); // true
 //     .catch((err) => {
 //         // runs if promise is rejected
 //     })
-    
+
 // Unsplash Access Key
 // YOUR_ACCESS_KEY
 // https://api.unsplash.com/
@@ -60,7 +60,7 @@ console.log( isRightTriangle(3, 4, 5) ); // true
 
 
 
-const searchBtn= document.querySelector('#searchBtn');
+const searchBtn = document.querySelector('#searchBtn');
 /* 
     When searchBtn is clicked: 
     get value of searchTerm
@@ -80,7 +80,7 @@ searchBtn.addEventListener(
 
         const requestURL = baseURL + search + query;
 
-        // https://api.unsplash.com/search/photos?query=cars
+        // https://api.unsplash.com/search/photos?query=searchTerm
 
         const ACCESS_KEY = "yjnaIuCsHvKW5XhYQwWpn6gezKyQflily8cjU5KRKqw";
         const clientID = `Client-ID ${ACCESS_KEY}`;
@@ -98,28 +98,30 @@ searchBtn.addEventListener(
         const output = document.querySelector('#output');
 
 
-        fetch( requestURL, requestOptions )
-        .then(res => {
-            return res.json();
-        })
-        .then(result => {
-            console.log(result);
+        fetch(requestURL, requestOptions)
+            .then(res => {
+                return res.json();
+            })
+            .then(result => {
+                console.log(result);
 
-            output.innerText = "";
-            for ( let photo of result.results ) {
-                // photo.urls.small
-                const imageContainer = document.createElement('div');
-                const image = document.createElement('img');
+                // output.replaceChildren();
+                // output.textContent();
+                output.innerText = "";
+                for (let photo of result.results) {
+                    // photo.urls.small
+                    const imageContainer = document.createElement('div');
+                    const image = document.createElement('img');
 
-                image.src = photo.urls.small;
+                    image.src = photo.urls.small;
 
-                imageContainer.append(image);
-                output.append(imageContainer);
-            }
+                    imageContainer.append(image);
+                    output.append(imageContainer);
+                }
 
-        })
-        .catch(err => {
-            console.log(err);
-        })
+            })
+            .catch(err => {
+                console.log(err);
+            })
     }
 );
